@@ -220,6 +220,7 @@ def run_cfg(cfg_file):
         add_run_options('allowlist', args, '-a')
         add_run_options('vdev', args, '--vdev')
         add_run_options('plugin', args, '-d')
+        add_run_options('legacy_mem', args, '--legacy-mem')
         args.extend(["--"])
         add_run_options('opts', args, None)
         add_run_options('map', args, '-m')

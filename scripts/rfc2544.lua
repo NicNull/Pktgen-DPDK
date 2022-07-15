@@ -503,7 +503,7 @@ function main()
 	pktgen.pause("[  INFO ] Priming DUT...\n",1000);
 	dummy = runTrial(512, 1, 5000, "Prime",0);
 	file:write("\n");
-        if dummy >= (sent * loss_tol)
+        if dummy >= (sent * loss_tol/100)
 	then
 	 	pktgen.pause("[WARNING] DUT seem to be dropping packets, stopping test.\n",1000);
 	else
